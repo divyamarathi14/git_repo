@@ -1,0 +1,24 @@
+Started by GitHub push by divyamarathi14
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/project1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/project1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/divyamarathi14/c-test.git # timeout=10
+Fetching upstream changes from https://github.com/divyamarathi14/c-test.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/divyamarathi14/c-test.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision f904add182b6238b8a3041a19b6554ce3502113f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f904add182b6238b8a3041a19b6554ce3502113f # timeout=10
+Commit message: "Update rev.c"
+ > git rev-list --no-walk 2137c3112ef38d5ef30da3f0e1aa8f39556dbf24 # timeout=10
+[project1] $ /bin/sh -xe /tmp/jenkins8488180926930289976.sh
++ cd /var/lib/jenkins/workspace/project1
++ make
+gcc -c rev.c
+gcc -o ABC.exe main.o big3.o fact.o rev.o
+Finished: SUCCESS

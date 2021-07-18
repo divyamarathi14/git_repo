@@ -1,0 +1,8 @@
+Started by user [8mha:////4L8xj62Gn6wBtUVjxrOnlXV+TDYTv+zM6ZDTLt9DhNJgAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6pcWpRfopmWWVibmJRYklGZkAkm/njscAAAA=[0mDivya M
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/java-deployment
+[java-deployment] $ /bin/sh -xe /tmp/jenkins2036150609264152232.sh
++ cp 'home/ec2-user/calendar (1).war' /home/ec2-user/apache-tomcat-9.0.50/webapps
+cp: failed to access '/home/ec2-user/apache-tomcat-9.0.50/webapps': Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

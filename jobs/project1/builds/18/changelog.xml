@@ -1,0 +1,9 @@
+commit 2137c3112ef38d5ef30da3f0e1aa8f39556dbf24
+tree 1ebb89a55203f849faacc1df7c1e70b5e2c32c38
+parent 2fc660734c9e82ef2c117c1667adc09bce1f88a9
+author divyamarathi14 <87360880+divyamarathi14@users.noreply.github.com> 2021-07-17 21:44:50 +0530
+committer GitHub <noreply@github.com> 2021-07-17 21:44:50 +0530
+
+    Update fact.c
+
+:100644 100644 689cfe43b0e024455c9830c09ee4b0186ff54eea 6002559a278751688eb051227fafa2bd8014e48b M	fact.c

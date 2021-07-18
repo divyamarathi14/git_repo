@@ -1,0 +1,41 @@
+Started by user [8mha:////4L8xj62Gn6wBtUVjxrOnlXV+TDYTv+zM6ZDTLt9DhNJgAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6pcWpRfopmWWVibmJRYklGZkAkm/njscAAAA=[0mDivya M
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/java-build
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/java-build/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/divyamarathi14/java-project.git # timeout=10
+Fetching upstream changes from https://github.com/divyamarathi14/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/divyamarathi14/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 94e8ffd7ca370c72b83162c55442eb4a07e24731 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 94e8ffd7ca370c72b83162c55442eb4a07e24731 # timeout=10
+Commit message: "init"
+ > git rev-list --no-walk 94e8ffd7ca370c72b83162c55442eb4a07e24731 # timeout=10
+[java-build] $ /bin/sh -xe /tmp/jenkins955695820829989755.sh
++ cd /var/lib/jenkins/workspace/java-build
++ mvn pacakage
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.example:java-tomcat-maven-example >----------------
+[INFO] Building hello Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.248 s
+[INFO] Finished at: 2021-07-18T11:03:17Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "pacakage". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

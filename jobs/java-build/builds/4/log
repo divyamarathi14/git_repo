@@ -1,0 +1,63 @@
+Started by GitHub push by divyamarathi14
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/java-build
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/java-build/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/divyamarathi14/java-project.git # timeout=10
+Fetching upstream changes from https://github.com/divyamarathi14/java-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/divyamarathi14/java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 812092270149471774b0b205327b3ba680e6a6ba (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 812092270149471774b0b205327b3ba680e6a6ba # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 94e8ffd7ca370c72b83162c55442eb4a07e24731 # timeout=10
+[java-build] $ /bin/sh -xe /tmp/jenkins3202031920155055433.sh
++ cd /var/lib/jenkins/workspace/java-build
++ mvn package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.example:java-tomcat-maven-example >----------------
+[INFO] Building hello Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ java-tomcat-maven-example ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-build/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ java-tomcat-maven-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ java-tomcat-maven-example ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-build/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ java-tomcat-maven-example ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ java-tomcat-maven-example ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ java-tomcat-maven-example ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [java-tomcat-maven-example] in [/var/lib/jenkins/workspace/java-build/target/java-tomcat-maven-example]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/java-build/src/main/webapp]
+[INFO] Webapp assembled in [212 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/java-build/target/java-tomcat-maven-example.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy (default) @ java-tomcat-maven-example ---
+[INFO] Configured Artifact: com.github.jsimone:webapp-runner:8.5.11.3:jar
+[INFO] com.github.jsimone:webapp-runner:8.5.11.3:jar already exists in /var/lib/jenkins/workspace/java-build/target/dependency
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.758 s
+[INFO] Finished at: 2021-07-18T11:13:26Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
